@@ -21,6 +21,7 @@ group :assets do
   gem "uglifier", ">= 1.0.3"
   gem "compass-rails", ">= 1.0.3"
   gem "zurb-foundation", "~> 4.1.6"
+  gem "handlebars_assets"
 end
 
 group :development, :test do
@@ -30,6 +31,7 @@ group :development, :test do
   gem "growl", "1.0.3", :require => false
   gem "meta_request", "0.2.1"
   gem "better_errors"
+  gem "binding_of_caller"
   gem "pry", "0.9.10"
   gem "pry-doc"
   gem "pry-rails", "~> 0.2.2"
