@@ -1,5 +1,8 @@
 Efile::Application.routes.draw do
-  root :to => 'home#index'
+  root :to => "sessions#new"
+
+  # match '/' => "sessions#new", :as => :login
+  match '/home' => "home#index", :as => :home
 
   match '/auth/:provider/callback' => "sessions#create"
   match '/logout' => "sessions#destroy", :as => :logout
