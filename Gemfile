@@ -1,21 +1,20 @@
 source 'https://rubygems.org'
+
 gem 'rails', '3.2.13'
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
 gem 'jquery-rails'
 gem "puma", "~> 2.0.1"
 gem "mongoid", "~> 3.1.4"
 gem "bson", "~> 1.8.0"
 gem "bson_ext", "~> 1.8.0"
 gem "slim-rails", "~> 1.1.1"
+gem 'omniauth-google-oauth2'
 gem "cancan", "~> 1.6.10"
 gem "rolify", ">= 3.2.0"
 gem "draper", "~> 1.2.1"
 gem "figaro"
 gem "backbone-on-rails", "~> 1.0.0.0"
+gem "marionette-rails", "~> 1.0.2"
+
 group :assets do
   gem "sass-rails", "~> 3.2.3"
   gem "coffee-rails", "~> 3.2.1"
@@ -23,8 +22,9 @@ group :assets do
   gem "compass-rails", ">= 1.0.3"
   gem "zurb-foundation", "~> 4.1.6"
 end
+
 group :development, :test do
-  gem "foreman", "~> 0.60.2"
+  gem "foreman", "~> 0.63.0"
   gem "rspec-rails", "~> 2.13.2"
   gem "rb-fsevent", :require => false
   gem "growl", "1.0.3", :require => false
@@ -36,6 +36,7 @@ group :development, :test do
   gem "pry-debugger"
   gem "awesome_print"
 end
+
 group :test do
   gem "factory_girl_rails", "~> 4.0"
   gem "capybara"
