@@ -30,11 +30,9 @@ body
     section.top-bar-section
       ul.right
         li.divider
-        li: a href='#' Main Item 1
+        li: a href="#" = current_user.name if signed_in?
         li.divider
-        li: a href='#' Main Item 2
-        li.divider
-        li: a href='#' Main Item 3
+        li = link_to "logout", logout_path if signed_in?
 
   == yield
 
