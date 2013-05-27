@@ -13,8 +13,6 @@ class User
   field :token, type: String
   field :expires_at, type: String
 
-
-
   def self.from_omniauth(auth)
     u = where("provider" => auth["provider"], "uid" => auth["uid"]).first_or_initialize.tap do |user|
       user.provider         = auth["provider"]

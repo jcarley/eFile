@@ -1,0 +1,8 @@
+div.row
+  div.large-9.columns
+
+    h3 Welcome to eFile
+    p eFile is your electronic file system for all your manuals and warrenties.
+    p Click on the Google icon below to register or login.
+
+    = link_to image_tag("google_apps_64.png", size: "64x64", alt: "Google"), "/auth/google_oauth2", { :id => "google" }
