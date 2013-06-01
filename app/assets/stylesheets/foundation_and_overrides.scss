@@ -1206,3 +1206,12 @@ $em-base: 16px !default;
 // $topbar-media-query: "only screen and (min-width: "#{$topbar-breakpoint}")";
 
 @import 'foundation';
+
+span.section-subheader {
+  position: relative;
+  font-size: 10pt;
+  color: $subheader-font-color;
+  font-weight: $subheader-font-weight;
+  padding-left: 1em;
+  top: -10px;
+}

@@ -27,6 +27,9 @@ end
 group :development, :test do
   gem "foreman", "~> 0.63.0"
   gem "rspec-rails", "~> 2.13.2"
+  gem 'guard-livereload'
+  gem 'guard-spork'
+  gem 'guard-rspec'
   gem "rb-fsevent", :require => false
   gem "growl", "1.0.3", :require => false
   gem "meta_request", "0.2.1"
