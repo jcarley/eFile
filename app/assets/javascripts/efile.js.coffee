@@ -4,13 +4,12 @@ window.Efile =
   Views: {}
   Routers: {}
   initialize: ->
-    items = new Efile.Collections.Items()
-    items.fetch()
+    window.items = new Efile.Collections.Items()
+    window.items.fetch()
 
     itemsView = new Efile.Views.ItemsView
       collection: items
     itemsView.render()
-    $(this).foundation('section', 'reflow')
 
 $(document).ready ->
   Efile.initialize()

@@ -1,5 +1,8 @@
 class Efile.Views.ItemView extends Backbone.View
 
+  id: =>
+    @model.get('_id')
+
   tagName: 'section'
 
   template: JST['items/index']
