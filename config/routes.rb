@@ -1,5 +1,8 @@
 Efile::Application.routes.draw do
+
   root :to => "sessions#new"
+
+  resources :items
 
   # match '/' => "sessions#new", :as => :login
   match '/home' => "home#index", :as => :home

@@ -7,7 +7,7 @@ FactoryGirl.define do
     model_number 1
     manufacturer "MyString"
     website "MyString"
-    purchase_price "MyString"
+    purchase_price 14.99
     purchase_date "2013-06-01 07:41:01"
     document_count 1
     note_count 1
