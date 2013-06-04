@@ -7,7 +7,7 @@ class Efile.Views.ItemsView extends Backbone.View
     @listenTo(@collection, 'remove', @removeItem)
     @listenTo(@collection, 'change', @updateItem)
 
-  addItem: (model) ->
+  addItem: (model, collection, options) ->
     id = model.get('_id')
     @items[id] = new Efile.Views.ItemView model: model
     @$el.append(@items[id].render().$el)
@@ -25,7 +25,7 @@ class Efile.Views.ItemsView extends Backbone.View
     @reflow()
     return @
 
-  updateItem: (model) ->
+  updateItem: (model, collection, options) ->
     id = model.get('_id')
     @items[id] = new Efile.Views.ItemView model: model
     @$("section##{id}").before(@items[id].render().$el).remove()
