@@ -12,8 +12,6 @@ gem "cancan", "~> 1.6.10"
 gem "rolify", ">= 3.2.0"
 gem "draper", "~> 1.2.1"
 gem "figaro"
-gem "backbone-on-rails", "~> 1.0.0.0"
-gem "marionette-rails", "~> 1.0.2"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
