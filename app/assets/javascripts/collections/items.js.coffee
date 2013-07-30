@@ -1,4 +1,3 @@
-class Efile.Collections.Items extends Backbone.Collection
-
-  model: Efile.Models.Item
+class App.Collections.Items extends Backbone.Collection
+  model: App.Models.Item
   url: '/items'

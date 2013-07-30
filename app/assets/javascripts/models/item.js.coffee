@@ -1,1 +1,1 @@
-class Efile.Models.Item extends Backbone.Model
+class App.Models.Item extends Backbone.Model

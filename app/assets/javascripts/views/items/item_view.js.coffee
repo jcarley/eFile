@@ -1,12 +1,9 @@
-class Efile.Views.ItemView extends Backbone.View
+class App.Views.ItemView extends Backbone.Marionette.ItemView
 
   id: =>
     @model.get('_id')
 
   tagName: 'section'
 
-  template: JST['items/index']
-
-  render: =>
-    @$el.html(@template @model.toJSON())
-    return @
+  # template: JST['items/item']
+  template: 'items/item'

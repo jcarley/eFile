@@ -41,6 +41,6 @@ class ItemsController < ApplicationController
     item.note_count = 0
     items << item
 
-    respond_with items
+    respond_with items, status: 200
   end
 end
