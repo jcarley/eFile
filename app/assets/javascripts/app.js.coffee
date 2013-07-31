@@ -1,0 +1,1 @@
+myModule = angular.module 'MessagingModule', []
