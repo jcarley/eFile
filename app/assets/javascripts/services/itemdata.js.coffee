@@ -1,4 +1,5 @@
 appModule.factory 'itemData', ($resource) ->
   data = $resource '/items'
-  items: ->
-    data.query()
+  items: (callback) ->
+    data.query ->
+      callback()
