@@ -42,3 +42,6 @@ ul.none {
   border: solid 1px #C66;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}

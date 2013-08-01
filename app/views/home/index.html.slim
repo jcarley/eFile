@@ -1,2 +1,9 @@
-.row
-  #items.section-container.vertical-tabs[data-section="vertical-tabs"]
+#items-container[ng-controller="HomeCtrl" ng-cloak]
+  .row
+    #items.section-container.vertical-tabs[data-section="vertical-tabs"]
+      section ng-repeat="item in items"
+        p.title[data-section-title]
+          a href="#" {{ item.name }}
+          span.section-subheader {{item.document_count}} documents, {{item.note_count}} notes
+        .content[data-section-content]
+          p {{ item.name }} Documents

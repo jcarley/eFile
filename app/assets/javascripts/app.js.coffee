@@ -1,1 +1,1 @@
-myModule = angular.module 'MessagingModule', []
+@appModule = angular.module 'efile', []

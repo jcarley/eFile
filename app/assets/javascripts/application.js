@@ -13,5 +13,8 @@
 //= require jquery
 //= require foundation
 //= require handlebars.runtime
+//= require app
+//= require_tree ./controllers
+//= require_tree ./services
 
 $(function(){ $(document).foundation(); });

@@ -1,5 +1,0 @@
-p.title[data-section-title]
-  a href="#" {{ name }}
-  span.section-subheader {{document_count}} documents, {{note_count}} notes
-.content[data-section-content]
-  p {{ name }} Documents

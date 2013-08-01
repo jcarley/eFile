@@ -11,7 +11,7 @@ head
 
   meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-  title= content_for?(:title) ? yield(:title) : "Untitled"
+  title= content_for?(:title) ? yield(:title) : "eFile"
 
   = stylesheet_link_tag "application"
   = javascript_include_tag "vendor/custom.modernizr"
@@ -19,35 +19,36 @@ head
 
 body
 
-  nav.top-bar
-    ul.title-area
-      li.name
-        h1: a href='#' eFile
-      li.toggle-topbar.menu-icon
-        a href='#'
-          span menu
+  #application ng-app="efile"
+    nav.top-bar
+      ul.title-area
+        li.name
+          h1: a href='#' eFile
+        li.toggle-topbar.menu-icon
+          a href='#'
+            span menu
 
-    section.top-bar-section
-      ul.right
-        li.divider
-        li: a href="#" = current_user.name if signed_in?
-        li.divider
-        li = link_to "logout", logout_path if signed_in?
+      section.top-bar-section
+        ul.right
+          li.divider
+          li: a href="#" = current_user.name if signed_in?
+          li.divider
+          li = link_to "logout", logout_path if signed_in?
 
-  == yield
+    == yield
 
-  footer.row
-    .large-12.columns
-      .row
-        .large-6.columns
-          p &copy; Copyright 2013 FinishFirstSoftware.com
-        .large-6.columns
-          - if signed_in?
-            ul.inline-list.right
-              li: a href="#" Link 1
-              li: a href="#" Link 2
-              li: a href="#" Link 3
-              li: a href="#" Link 4
+    footer.row
+      .large-12.columns
+        .row
+          .large-6.columns
+            p &copy; Copyright 2013 FinishFirstSoftware.com
+          .large-6.columns
+            - if signed_in?
+              ul.inline-list.right
+                li: a href="#" Link 1
+                li: a href="#" Link 2
+                li: a href="#" Link 3
+                li: a href="#" Link 4
 
   = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"
   = javascript_include_tag "application"
