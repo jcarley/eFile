@@ -1,1 +1,1 @@
-@appModule = angular.module 'efile', []
+@appModule = angular.module 'efile', ['ngResource']
