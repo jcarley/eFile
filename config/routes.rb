@@ -5,10 +5,10 @@ Efile::Application.routes.draw do
   resources :items
 
   # match '/' => "sessions#new", :as => :login
-  match '/home' => "home#index", :as => :home
+  get '/home' => "home#index", :as => :home
 
-  match '/auth/:provider/callback' => "sessions#create"
-  match '/logout' => "sessions#destroy", :as => :logout
-  match '/auth/failure' => "sessions#failure", :as => :login_failure
+  post '/auth/:provider/callback' => "sessions#create"
+  post '/logout' => "sessions#destroy", :as => :logout
+  post '/auth/failure' => "sessions#failure", :as => :login_failure
 
 end
